@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Select from "react-select";
 import UserData from "./userData/UserData";
 
@@ -27,17 +27,6 @@ function Hero() {
     fetchUsers(API);
   }, []);
 
-  // const options = [
-  //     {
-  //       value: 1,
-  //       label: "Leanne Graham"
-  //     },
-  //     {
-  //       value:  2,
-  //       label: "Ervin Howell"
-  //     }
-  //   ];
-
   return (
     <div>
       <section className="min-h-screen flex flex-col justify-start items-center p-5 text-center">
@@ -53,14 +42,14 @@ function Hero() {
                   Repository
                 </button>
               </td>
-              <td className="pl-80">
+              <td className="ml-80">
                 <Select options={options} />
               </td>
-              <td className="pl-80">
+              <td className="ml-80">
                 {" "}
                 <Select options={options} />
               </td>
-              <td className="pl-80">
+              <td className="ml-80">
                 {" "}
                 <Select options={options} />
               </td>
