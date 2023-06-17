@@ -1,13 +1,13 @@
-import { useAuth0 } from "@auth0/auth0-react";
-import { GrGithub } from "react-icons/gr";
 import { MdNightsStay, MdWbSunny } from "react-icons/md";
+import { GrGithub } from "react-icons/gr";
+import { useAuth0 } from "@auth0/auth0-react";
 
 const Header = ({ darkMode, setDarkMode }) => {
   const { loginWithRedirect, isAuthenticated, logout, user } = useAuth0();
   return (
     <header className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
       <nav className="flex justify-between items-center p-5">
-        <h1 className="text-lg">
+        <h1 className="animate-pulse text-lg">
           <GrGithub size={42} />
         </h1>
 
