@@ -10,7 +10,7 @@ const UserData = ({ users }) => {
           <tr key={id}>
             <td>📃{id}</td>
             <td>{name}</td>
-            <td>{email}</td>
+            <td>📧{email}</td>
             <td>
               {street}, {city}, , {zipcode}
             </td>

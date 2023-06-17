@@ -51,7 +51,6 @@ function Hero() {
 
   const sortedUsers = sortUsers(users, sortOption);
 
-  // Styles for the Select component
   const selectStyles = {
     control: (styles) => ({
       ...styles,
@@ -79,24 +78,13 @@ function Hero() {
                   Repository
                 </button>
               </td>
-              {/* <td className="ml-80 ">
+              <td className="ml-80 ">Name</td>
+              <td className="ml-80">Email</td>
+
+              <td className="flex justify-between items-center p-5">
+                Address
                 <Select
-                  options={options}
-                  onChange={handleSortChange}
-                  value={options.find((option) => option.value === sortOption)}
-                  styles={selectStyles}
-                />
-              </td>
-              <td className="ml-80">
-                <Select
-                  options={options}
-                  onChange={handleSortChange}
-                  value={options.find((option) => option.value === sortOption)}
-                  styles={selectStyles}
-                />
-              </td> */}
-              <td className="ml-80">
-                <Select
+                  id="sortSelect"
                   options={options}
                   onChange={handleSortChange}
                   value={options.find((option) => option.value === sortOption)}
